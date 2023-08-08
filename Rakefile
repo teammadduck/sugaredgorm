@@ -46,7 +46,7 @@ task :is_repo_clean do
     system "bumpversion #{args.revision}"
   end
   
-  PACKAGE_NAME = "github.com/erhanakp/sugaredgorm"
+  PACKAGE_NAME = "github.com/teammadduck/sugaredgorm"
   desc 'run doc server'
   task :doc, [:port] => [:has_godoc] do |_, args|
     args.with_defaults(port: 9009)
@@ -73,7 +73,7 @@ task :is_repo_clean do
     puts "[->] pushing \e[33m#{current_git_tag}\e[0m to remote"
     system %{
       git push origin #{current_git_tag} &&
-      go list -m github.com/erhanakp/sugaredgorm@#{current_git_tag} &&
+      go list -m github.com/teammadduck/sugaredgorm@#{current_git_tag} &&
       echo "[->] [#{current_git_tag}] has been published" &&
       git push origin #{current_branch} &&
       echo "[->] code pushed to: [#{current_branch}] branch (updated)"
