@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/erhanakp/sugaredgorm"
+	"github.com/teammadduck/sugaredgorm"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 	gormlogger "gorm.io/gorm/logger"

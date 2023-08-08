@@ -1,4 +1,4 @@
-module github.com/erhanakp/sugaredgorm
+module github.com/teammadduck/sugaredgorm
 
 go 1.20
 
